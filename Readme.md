@@ -1,7 +1,7 @@
 ***
 <img src="assets/inicio.png" width="100%">
 
-**🔥 Esse projeto foi feito na linguagem `C` para obter base de conhecimento sobre a linguagem.**
+ **🔥 Esse projeto foi feito na linguagem `C` para obter base de conhecimento sobre a linguagem.**
 
 <br>
 
@@ -41,13 +41,15 @@
 **`🚀 Tecnologias`**
 
 <div>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="37"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="37"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gcc/gcc-original.svg" width="37"/>
+  <img src="https://img.shields.io/badge/Language-00599C?style=for-the-badge&logo=c&logoColor=white">
+  <img src="https://img.shields.io/badge/VS Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
+  <img src="https://img.shields.io/badge/windows%20terminal-4D4D4D?style=for-the-badge&logo=windows%20terminal&logoColor=white">
 </div>
 
 <br>
 
-**:octocat: Made by `Mateus Barros`**
+<div align="right">
+    :octocat: Feito por Mateus Barros :octocat:
+</div>
 
 ***
