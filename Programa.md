@@ -13,7 +13,12 @@
 
 ##
 
-⌨️ Relacionado as palavras com acentos na linguagem C, e preciso adicionar a biblioteca `#include<windows.h>` no inicio do aqruivo para que seja aplicado o padrão de  codificação UTF-8 na linguagem C.
+⌨️ Para usar palavras com acentos na linguagem C, e preciso adicionar a biblioteca `#include<windows.h>` no inicio do arquivo para que seja aplicado o padrão de  codificação UTF-8 da linguagem C no VS Code.
+
+```C
+#include<windows.h>
+```
+⌨️ Na função `int main() {}` coloque os codigos abaixo para que seja aplicado os acentos nas palavras.
 
 ```C
 #include<windows.h>
@@ -23,13 +28,13 @@ int main(){
   UINT CPAGE_DEFAULT = GetConsoleOutputCP();
   SetConsoleOutputCP(CPAGE_UTF8);
   
-  ...
+  // Your Code Here
   
   SetConsoleOutputCP(CPAGE_DEFAULT);
 }
 ```
 
-Já em IDE como `Visual Studio Code`, `DevC++`, `Eclipse` etc, somente adicione a biblioteca `#include<locale.h>` no inicio do arquivo para que seja aplicado o padrão UTF-8 na linguagem C.
+⌨️ Já em IDE como `Visual Studio Code`, `DevC++`, `Eclipse` etc, somente adicione a biblioteca `#include<locale.h>` no inicio do arquivo para que seja aplicado o padrão UTF-8 na linguagem C.
 
 ```C
 #include<locale.h>
@@ -43,7 +48,7 @@ int main(){
 
 Para executar o codigo no VS Code sem ter que abrir o terminal do windows, pressione a tecla F8 do teclado para compilar e executar o codigo no VS Code, assim não será necessario abrir um terminal do windows separado para compilar e depois executar.
 
-> *Para que funcione conforme especificado acima é preciso que o ***`GCC Compiler`*** esteja instalado e configurado nas variaveis de ambiente do computador para que funcione conforme especificado acima.*
+> *Para que funcione conforme especificado acima é preciso que o ***`GCC Compiler`*** esteja instalado e configurado nas variaveis de ambiente do computador.*
 
 <div align="center">
     :octocat: Feito por Mateus Barros :octocat:
