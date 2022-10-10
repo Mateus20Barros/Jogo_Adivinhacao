@@ -6,14 +6,16 @@
 
 <br>
 
-🎯 Projeto foi desenvolvido usando o editor de texto VS Code, para ser possivel executar o jogo no mesmo ambiente sera preciso realizar algumas configurações para que o editor possa executar o codigo escrito em C.
+🎯 Projeto foi desenvolvido usando o editor de texto VS Code, para ser possivel executar o jogo no mesmo ambiente em que foi desenvolvido, sera preciso realizar algumas configurações para que o `VS Code` possa executar o codigo escrito em C.
 
-* Baixar o ***[GCC Compiler](https://www.baixaki.com.br/linux/download/gcc.htm)*** ou outro compilador que desejar, instalar na maquina e configurar nas variaveis de ambiente do PC.
+* Baixar o ***[GCC Compiler](https://www.baixaki.com.br/linux/download/gcc.htm)*** ou outro compilador que desejar, instalar no computador e configurar nas variaveis de ambiente do mesmo.
 * No VS Code e preciso instalar as extensões ***[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)*** e ***[C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)***, para que o codigo seja executado no VS Code normalmente.
 
 ##
 
-⌨️ Para usar palavras com acentos na linguagem C, e preciso adicionar a biblioteca `#include<windows.h>` no inicio do arquivo para que seja aplicado o padrão de  codificação UTF-8 da linguagem C no VS Code.
+`⚙️ VS Code - Acentuação de Caracteres em C`
+
+⌨️ Para usar acentuação de caracteres na linguagem C, e preciso adicionar a biblioteca `#include<windows.h>` no inicio do arquivo executado no VS Code.
 
 ```C
 #include<windows.h>
@@ -34,7 +36,17 @@ int main(){
 }
 ```
 
-⌨️ Já em IDE como `Visual Studio Code`, `DevC++`, `Eclipse` etc, somente adicione a biblioteca `#include<locale.h>` no inicio do arquivo para que seja aplicado o padrão UTF-8 na linguagem C.
+##
+
+`⚙️ IDEs - Acentuação de Caracteres em C`
+
+⌨️ Para executar o codigo em IDE como `Visual Studio Code`, `DevC++`, `Eclipse` entre outros, somente adicione a biblioteca `#include<locale.h>` no inicio do arquivo.
+
+```C
+#include<locale.h>
+```
+
+⌨️ Em seguida insera o `setlocale(ALL, "Protuguese")` na função `int main() {}` conforme o codigo abaixo.
 
 ```C
 #include<locale.h>
