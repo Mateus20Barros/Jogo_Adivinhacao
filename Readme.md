@@ -48,7 +48,7 @@
 
 <br>
 
-<div align="right">
+<div align="center">
     :octocat: Feito por Mateus Barros :octocat:
 </div>
 
