@@ -17,7 +17,7 @@ O Jogo foi desenvolvido utilizando o editor de código **`VS Code`** código tam
 
 * Baixar e instalar o ***[GCC Compiler](https://www.baixaki.com.br/linux/download/gcc.htm)*** ou outro compilador que esteja familiarizado.
 * Configurar o compilador baixado e instalado nas variaveis de ambiente do computador.
-* Instalar as extensões ***[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)*** e ***[C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)***, no VS Code, para que o codigo escrito em C seja compilado no editor.
+* Instalar as extensões ***[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)*** e ***[C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)***, no VS Code, para que o código escrito em C seja compilado no editor.
 
 ##
 
