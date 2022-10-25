@@ -29,7 +29,7 @@ Para que as **`IDEs`** consiga entender os caracteres acentuados e preciso inclu
 #include<locale.h>
 ```
 
-Em seguida insira o **`setlocale(ALL, "Portuguese")`** dentro da função **`int main()`** antes de qualquer outro codigo conforme a seguir:
+Em seguida insira o **`setlocale(ALL, "Portuguese")`** dentro da função **`int main()`** antes de qualquer outro código conforme a seguir:
 
 ```C
 #include<stdio.h>
