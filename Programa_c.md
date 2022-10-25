@@ -74,7 +74,7 @@ Assim os caracteres acentuados seram entendidos pela linguagem C no **`VS Code`*
 
 Execute o código no **`VS Code`** sem abrir um terminal manualmente, usando a tecla **`F8`** no arquivo **`Programa.c`** assim o **`VS Code`** abrirá um terminal automaticamente com a saida do código após compilar o arquivo. 
 
-> *Para que esse atalho seja possivel no **`VS Code`** e necessario que o compilador baixado e instalado no computador esteja configurado corretamente nas variaveis de ambiente do computador, conforme explicado no início do arquivo.*
+> ***Para que esse atalho seja possivel no **`VS Code`** e necessario que o compilador baixado e instalado no computador esteja configurado corretamente nas variaveis de ambiente do computador, conforme explicado no início do arquivo.***
 
 <br>
 
