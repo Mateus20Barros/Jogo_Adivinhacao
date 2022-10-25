@@ -14,7 +14,7 @@
 
 ##
 
-**`🎲 Chute um numero`**
+**`🎲 Chute um numero`** 
 
 **Após definir o nivel do jogo, informe o numero que você acredita ser o numero secreto, após inserir o numero será mostrado se o jogador acertou ou não o numero, enquanto não acertar o numero será informado o ultimo numero inserido pelo jogador com uma dica, informando para o jogador se o ultimo numero e *`Menor`* ou *`Maior`* que o numero secreto.**
 
