@@ -8,8 +8,8 @@
 
 ### 📃 Sobre o arquivo Programa.h
 
-O arquivo **`Programa.h`** é criado para separar as chamadas das funções e declarações de variaveis do arquivo principal. Todas as chamadas das funções e variaveis 
-de escopo global criadas no arquivo **`Programa.c`** estão salvas nesse arquivo, para que assim qualquer função e variavel criada desordenadamente não gere erros 
+O arquivo **`Programa.h`** é criado para separar as chamadas das funções e declarações de variáveis do arquivo principal. Todas as chamadas das funções e variáveis 
+de escopo global criadas no arquivo **`Programa.c`** estão salvas nesse arquivo, para que assim qualquer função e variável criada desordenadamente não gere erros 
 na execução do código.
 
 <br>
