@@ -8,5 +8,5 @@
    void chuteMenor(int chuteJogador);
    void vitoria(int numeroSecreto, double pontos);
    void derrota(void);
-   
+  
 #endif
