@@ -12,7 +12,7 @@ O arquivo **`Programa.h`** é criado para separar as chamadas das funções e de
 de escopo global criadas no arquivo **`Programa.c`** estão salvas nesse arquivo, para que assim qualquer função e variável criada desordenadamente não gere erros 
 na execução do código.
 
-<br>
+##
 
 ### 🧩 Definição do arquivo Programa.h
 
@@ -22,15 +22,15 @@ caso contrário permanecerá as chamadas definidas no arquivo **`Programa.c`**.
 
 ```C
 #ifndef PROGRAMA_H
-	// Definições
+    // Definições
 #endif
 ```
 
-**`#ifndef`** é usado para abrir a condicional em tempo de compilação. <br>
-**`#endif`** é usado para fechar a condicional em tempo de compilação. <br>
-Por conversão é usado o nome do arquivo em letras maiúscula antes da diretiva **`#ifndef`**.
+- **`#ifndef`** usado para abrir a condicional em tempo de compilação. <br>
+- **`#endif`** usado para fechar a condicional em tempo de compilação. <br>
+- Por conversão é usado o nome do arquivo em letras maiúscula antes da diretiva **`#ifndef`**.
 
-<br>
+##
 
 ### 🏷️ Uso do arquivo Programa.h
 
