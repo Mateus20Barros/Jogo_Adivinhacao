@@ -6,61 +6,77 @@
 
 <br>
 
-🎯 Projeto foi desenvolvido usando o editor de texto VS Code, para ser possivel executar o jogo no mesmo ambiente em que foi desenvolvido, sera preciso realizar algumas configurações para que o `VS Code` possa executar o codigo escrito em C.
+### 📃 Sobre o arquivo Programa.c
 
-* Baixar o ***[GCC Compiler](https://www.baixaki.com.br/linux/download/gcc.htm)*** ou outro compilador que desejar, instalar no computador e configurar nas variaveis de ambiente do mesmo.
-* No VS Code e preciso instalar as extensões ***[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)*** e ***[C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)***, para que o codigo seja executado no VS Code normalmente.
+
+O arquivo **`Programa.c`** e o arquivo que contém a função **`int main()`** responsável por executar o codigo escrito na linguagem C, quando o compilador esta em execução ele procura pela função **`int main()`** para executar o código, caso não seja encontrada um erro e mostrado em tempo de execução. Então para que o jogo da forca seja executado no seu computador e preciso compilar o arquivo **`Programa.c`**.
+
+Além da função **`int main()`**, este arquivo também contém todas as funções do jogo, as bibliotecas da linguagem C usada para desenvolver o jogo.
+
+O Jogo foi desenvolvido utilizando o editor de código **`VS Code`** código também pode ser exectado em IDEs como **`Visual Studio Code`**, **`DevC++`**, **`Eclipse`** entre outras, já que as IDEs possuem compiladores embutido, porém para executar o jogo no **`VS Code`** e necessario algumas configurações no computador e no próprio **`VS Code`** como a seguir:
+
+* Baixar e instalar o ***[GCC Compiler](https://www.baixaki.com.br/linux/download/gcc.htm)*** ou outro compilador que esteja familiarizado.
+* Configurar o compilador baixado e instalado nas variaveis de ambiente do computador.
+* Instalar as extensões ***[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)*** e ***[C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)***, no VS Code, para que o codigo escrito em C seja compilado no editor.
 
 ##
 
-`⚙️ VS Code - Acentuação de Caracteres em C`
+### 🔣 Acentuação de Caracteres nas IDEs
 
-⌨️ Para usar acentuação de caracteres na linguagem C, e preciso adicionar a biblioteca `#include<windows.h>` no inicio do arquivo executado no VS Code.
+Para que as **`IDEs`** consiga entender os caracteres acentuados e preciso incluir a biblioteca **`locale.h`** no começo do arquivo **`Programa.c`**, assim ao inserir  caracteres acentuados as **`IDE`** entenderar os caracteres.
+
+```C
+#include<locale.h>
+```
+
+Em seguida insira o **`setlocale(ALL, "Portuguese")`** dentro da função **`int main()`** antes de qualquer outro codigo conforme a seguir:
+
+```C
+#include<stdio.h>
+#include<locale.h>
+
+int main(void) {
+  setlocale(ALL, "Portuguese");
+  
+  // Código aqui
+  
+  return 0;
+}
+```
+Assim os caracteres acentuados seram entendidos pela linguagem C nas **`IDEs`**.
+
+##
+
+### 🔣 Acentuação de Caracteres no VS Code
+
+Para usar acentuação de caracteres no **`VS Code`** e preciso incluir a biblioteca **`windows.h`** no começo do arquivo **`Programa.c`** assim ao inserir um caracter acentuado no **`VS Code`** o mesmo entenderar o caracter.
 
 ```C
 #include<windows.h>
 ```
-⌨️ Na função `int main() {}` coloque os codigos abaixo para que seja aplicado os acentos nas palavras.
+Em seguida, insira os trechos de códigos a baixo dentro da função **`int main()`**, sendo uma parte no começo da função, e a outra parte antes do fechamento da função, conforme a seguir:
 
 ```C
+#include<stdio.h>
 #include<windows.h>
 
-int main(){
+int main(void) {
   UINT CPAGE_UTF8 = 65001;
   UINT CPAGE_DEFAULT = GetConsoleOutputCP();
   SetConsoleOutputCP(CPAGE_UTF8);
   
-  // Your Code Here
+  // Código aqui
   
   SetConsoleOutputCP(CPAGE_DEFAULT);
 }
 ```
+Assim os caracteres acentuados seram entendidos pela linguagem C no **`VS Code`**.
 
-##
+Execute o código no **`VS Code`** sem abrir um terminal manualmente, usando a tecla **`F8`** no arquivo **`Programa.c`** assim o **`VS Code`** abrirá um terminal automaticamente com a saida do código após compilar o arquivo. 
 
-`⚙️ IDEs - Acentuação de Caracteres em C`
+> *Para que esse atalho seja possivel no **`VS Code`** e necessario que o compilador baixado e instalado no computador esteja configurado corretamente nas variaveis de ambiente do computador, conforme explicado no início do arquivo.*
 
-⌨️ Para executar o codigo em IDE como `Visual Studio Code`, `DevC++`, `Eclipse` entre outros, somente adicione a biblioteca `#include<locale.h>` no inicio do arquivo.
-
-```C
-#include<locale.h>
-```
-
-⌨️ Em seguida insera o `setlocale(ALL, "Protuguese")` na função `int main() {}` conforme o codigo abaixo.
-
-```C
-#include<locale.h>
-
-int main(){
-  setlocale(LC_ALL, "Portuguese");
-  
-  ...
-}
-```
-
-Para executar o codigo no VS Code sem ter que abrir o terminal do windows, pressione a tecla F8 do teclado para compilar e executar o codigo no VS Code, assim não será necessario abrir um terminal do windows separado para compilar e depois executar.
-
-> *Para que funcione conforme especificado acima é preciso que o ***`GCC Compiler`*** esteja instalado e configurado nas variaveis de ambiente do computador.*
+<br>
 
 <div align="center">
     :octocat: Feito por Mateus Barros :octocat:
