@@ -129,4 +129,4 @@ int main(void) {
    }
 
    jogadorAcertou ? mensagemVitoria(numeroSecreto, pontos) : mensagemDerrota();
-}
+} 
