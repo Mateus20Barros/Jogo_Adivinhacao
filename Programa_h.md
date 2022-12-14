@@ -34,11 +34,11 @@ caso contrário permanecerá as chamadas definidas no arquivo **`Programa.c`**.
 
 ### 🏷️ Uso do arquivo Programa.h
 
-Para adicionar o arquivo **`Programa.h`** no arquivo **`Programa.c`** use a diretiva **`#include`** com o nome do arquivo entre **`<>`**, no inicio 
+Para adicionar o arquivo **`Programa.h`** no arquivo **`Programa.c`** use a diretiva **`#include`** com o nome do arquivo entre **`""`**, no inicio 
 do arquivo **`Programa.c`**, conforme abaixo:
 
 ```C
-#include<Programa.h>
+#include "Programa.h"
 ```
 
 <br>
